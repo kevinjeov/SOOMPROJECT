@@ -100,7 +100,7 @@
 				<!-- Menu -->
 				<nav id="menu">
 					<header class="major">
-						<a href="#soommain" id="title"> 메뉴</a>
+						<a href="soommain.jsp" id="title"> 메뉴</a>
 					</header>
 					<ul>
 						<li><a href="new.jsp" id="top-link"><span
@@ -117,7 +117,18 @@
 				</nav>
 
 
-
+				
+				<!-- Section -->
+				<section>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+						<li class="icon solid fa-phone">(000) 000-0000</li>
+						<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+							Nashville, TN 00000-0000
+						</li>
+					</ul>
+				</section>
+				
 				<!-- Footer -->
 				<footer id="footer">
 					<p class="copyright">

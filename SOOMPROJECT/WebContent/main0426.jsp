@@ -15,17 +15,15 @@
 <link rel="stylesheet" href="assets0426/css/main.css" />
 </head>
 <body class="is-preload">
+	<h3 style="text-align: center; margin-top: 50px;">S O O M</h3>
 	<!-- Wrapper -->
 	<div id="wrapper">
-		<div> 
-		<h3 style="align : left"> S O O M</h3>
-		</div>
-<!-- 깃이 안올라가아아아ㅏㄴ  -->		
+		
 		<div id="main">
 			<div class="inner">
-				
+			
 				<!-- Header -->
-				<header id="header">
+				<header id="header" style="margin-top: 50px; padding: 0;"> </header>
 				
 				</header>
 			

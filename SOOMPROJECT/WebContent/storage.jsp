@@ -72,7 +72,7 @@
 					<!-- Menu -->
 				<nav id="menu">
 					<header class="major">
-						<a href="#soommain" id="title"> 메뉴</a>
+						<a href="soommain.jsp" id="title"> 메뉴</a>
 					</header>
 					<ul>
 						<li><a href="new.jsp" id="top-link"><span
@@ -91,39 +91,6 @@
 
 				<!-- Section -->
 				<section>
-					<header class="major">
-						<h2>색상 소개</h2>
-					</header>
-					<div class="mini-posts">
-						<article>
-							<a href="#" class="image"><img src="images0426ㄴㄴ66/pic07.jpg" alt="" /></a>
-							<p>오늘의 쿨톤 의상 컨셉에 대해서 소개합니다.</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images042666/pic08.jpg" alt="" /></a>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore aliquam.</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore aliquaㄴm.</p>
-						</article>
-					</div>
-					<ul class="actions">
-						<li><a href="#" class="button">More</a></li>
-					</ul>
-				</section>
-
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Get in touch</h2>
-					</header>
-					<p>Sed varius enim lorem ullamcorper dolore aliquam aenean
-						ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin
-						sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-						tempus aliquam.</p>
 					<ul class="contact">
 						<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
 						<li class="icon solid fa-phone">(000) 000-0000</li>
