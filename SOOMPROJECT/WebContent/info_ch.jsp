@@ -35,7 +35,7 @@ body {
 
 img {
 	max-width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .p-image {
@@ -98,11 +98,9 @@ img {
 				</header>
 
 				<!-- Form -->
-				<div style="margin-top: 30px;">
 				<h2>회원가입</h2>
-				</div>
 				<br>
-				<div class="row" >
+				<div class="row">
 					<div class="small-12 medium-2 large-2 columns">
 						<div class="circle">
 							<!-- User Profile Image -->
@@ -115,7 +113,9 @@ img {
 							<i class="fa fa-camera upload-button"></i>
 
 							<div>
-								
+								<input class="file-upload" type="file" accept="image/*"
+									onchange="setThumbnail(event);"
+									style="margin-right: 1300px; position: relative; margin-bottom: 700px;" />
 
 								<script>
 									function setThumbnail(event) {
@@ -144,17 +144,9 @@ img {
 					<div style="margin-left: 5px">
 						<input type="text" name="name" id="name" value=""
 							placeholder="이름을 입력하세요" style="width: 40%; margin-left: 150px;" /><br>
-							
 						<div style="display: block;">
-						
-						
 							<input type="email" name="useremail" id="useremail" value=""
 								placeholder="이메일을 입력하세요" style="width: 40%; margin-left: 150px;" /><br>
-								
-								<input class="file-upload" type="file" accept="image/*"
-									onchange="setThumbnail(event);" style="position: absolute; bottom: 470px;">
-									<br><br>
-									<!-- <div style="height: 500px;"></div> -->
 
 							<!--					<th>이메일</th>
         
@@ -171,12 +163,12 @@ img {
 					</select> -->
 						</div>
 					</div>
-					
+					<br>
 
 					<!-- 아이디 -->
 					<div>
 						<input type="text" id="id" required="required" name="id"
-							placeholder="아이디를 입력하세요" style="display: inline; width: 53%; margin-top: 10px">
+							placeholder="아이디를 입력하세요" style="display: inline; width: 53%;">
 						<input type="button" value="중복확인" onclick="ajaxCall()"
 							style="margin-left: 3%;">
 						<p id="p1"></p>
@@ -203,15 +195,13 @@ img {
 
 						<h3>성별</h3>
 						<input type="radio" id="gender-male" name="gender" checked>
-						<label for="gender-male" style="margin-bottom: 3%;">남자</label> <input
+						<label for="gender-male" style="margin-bottom: 3%;">남</label> <input
 							type="radio" id="gender-female" name="gender-male"> <label
-							for="gender-female">여자</label> <br> <br>
+							for="gender-female">여</label> <br> <br>
 						<h3>생년월일</h3>
 						<td><input type="date" id="birth" name="birth"
 							style="margin-bottom: 3%;"></td>
 					</div>
-
-
 
 					<div>
 						<ul class="actions">
@@ -223,16 +213,6 @@ img {
 						</ul>
 					</div>
 
-
-					<script>
-						function test() {
-							const nameElem = document.querySelector('#name');
-							var userName = nameElem.value;
-							window.alert('\uD83D\uDE00' + userName
-									+ '님 회원가입 성공');
-
-						}
-					</script>
 				</form>
 
 

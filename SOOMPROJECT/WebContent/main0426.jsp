@@ -18,10 +18,9 @@
 	<h3 style="text-align: center; margin-top: 50px;">S O O M</h3>
 	<!-- Wrapper -->
 	<div id="wrapper">
-		
 		<div id="main">
 			<div class="inner">
-			
+				<button style="margin-left : 1600px;" onclick="location.href='Login.html'"> ·Î±×ÀÎ</button>
 				<!-- Header -->
 				<header id="header" style="margin-top: 50px; padding: 0;"> </header>
 				
