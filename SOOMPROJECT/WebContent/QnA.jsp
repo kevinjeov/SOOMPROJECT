@@ -77,9 +77,9 @@
 						<a href="#soommain" id="title"> 메뉴</a>
 					</header>
 					<ul>
-						<li><a href="menu0426.jsp" id="top-link"><span
+						<li><a href="new.jsp" id="top-link"><span
 								class="icon solid fa-home"> + 새회의실 만들기</span></a></li>
-						<li><a href="#meetingjoin" id="portfolio-link"><span
+						<li><a href="meetingjoin.jsp" id="portfolio-link"><span
 								class="icon solid fa-th">회의 참가하기</span></a></li>
 						<li><a href="storage.jsp" id="about-link"><span
 								class="icon solid fa-user">회의록 보관함</span></a></li>
@@ -89,6 +89,7 @@
 								class="icon solid fa-envelope"> 문의하기</span></a></li>
 					</ul>
 				</nav>
+
 
 
 				<!-- Section -->

@@ -12,7 +12,7 @@
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="assets042666/css/main.css" />
+<link rel="stylesheet" href="assets0426/css/main.css" />
 </head>
 <body class="is-preload">
 <!--아라라라라랄  -->
@@ -69,24 +69,25 @@
 					</form>
 				</section>
 
-				<!-- Menu -->
+					<!-- Menu -->
 				<nav id="menu">
 					<header class="major">
 						<a href="#soommain" id="title"> 메뉴</a>
 					</header>
 					<ul>
-						<li><a href="#new" id="top-link"><span
+						<li><a href="new.jsp" id="top-link"><span
 								class="icon solid fa-home"> + 새회의실 만들기</span></a></li>
-						<li><a href="#meetingjoin" id="portfolio-link"><span
+						<li><a href="meetingjoin.jsp" id="portfolio-link"><span
 								class="icon solid fa-th">회의 참가하기</span></a></li>
-						<li><a href="#storage" id="about-link"><span
+						<li><a href="storage.jsp" id="about-link"><span
 								class="icon solid fa-user">회의록 보관함</span></a></li>
-						<li><a href="#issue" id="contact-link"><span
+						<li><a href="issue.jsp" id="contact-link"><span
 								class="icon solid fa-envelope">그룹별 이슈</span></a></li>
-						<li><a href="#QnA" id="contact-link"><span
+						<li><a href="QnA.jsp" id="contact-link"><span
 								class="icon solid fa-envelope"> 문의하기</span></a></li>
 					</ul>
 				</nav>
+
 
 				<!-- Section -->
 				<section>

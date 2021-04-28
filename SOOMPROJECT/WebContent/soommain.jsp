@@ -22,25 +22,7 @@
 		<!-- Main -->
 		<div id="main">
 			<div class="inner">
-				
-				<!-- Section -->
-				<section id="meetingjoin">
-					<header class="major">
-						<h3> 회의 참가하기</h3>
-					</header>
-					<section>
-					<div class="textbox"> <label for="ex_input">회의실  URI</label> 
-					<input type="text" id="ex_input"> </div>
-					</section>
-					<br> <br>
-					<div class="posts">
-						<video src="images0426/kitty0426.mp4" width="500px" height="300px"></video>
-							<!-- <input type="text" height=300px></input> -->
-					</div>
-					
-					
-					
-				</section>
+
 				<!-- Header -->
 				<header id="header">
 					<ul class="icons">
@@ -57,9 +39,76 @@
 					</ul>
 				</header>
 
-				
-				
-			
+				<!-- Banner -->
+				<section id="soommain">
+					<div class="content">
+						<header class="major">
+							<h3>회의 목록</h3>
+						</header>
+						<table class="table" style="background-color: white;">
+
+							<thead>
+								<tr
+									style="height: 5px; font-size: smaller; background-color: gray;">
+									<th>회의번호</th>
+									<th>제목</th>
+									<th>일자</th>
+									<th>참석자</th>
+
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>쉼표 사람들 회의</td>
+									<td>2021-04-21</td>
+									<td>쉼표</td>
+								</tr>
+
+								<tr>
+									<td>1</td>
+									<td>쉼표 사람들 회의</td>
+									<td>2021-04-21</td>
+									<td>쉼표</td>
+								</tr>
+
+								<tr>
+									<td>1</td>
+									<td>쉼표 사람들 회의</td>
+									<td>2021-04-21</td>
+									<td>쉼표</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>쉼표 사람들 회의</td>
+									<td>2021-04-21</td>
+									<td>쉼표</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>쉼표 사람들 회의</td>
+									<td>2021-04-21</td>
+									<td>쉼표</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>쉼표 사람들 회의</td>
+									<td>2021-04-21</td>
+									<td>쉼표</td>
+								</tr>
+
+								<tr>
+									<td>1</td>
+									<td>쉼표 사람들 회의</td>
+									<td>2021-04-21</td>
+									<td>쉼표</td>
+								</tr>
+							</tbody>
+
+						</table>
+				</section>
+
+
 			</div>
 		</div>
 
@@ -92,6 +141,8 @@
 								class="icon solid fa-envelope"> 문의하기</span></a></li>
 					</ul>
 				</nav>
+
+
 
 				<!-- Section -->
 				<section>

@@ -39,77 +39,7 @@
 					</ul>
 				</header>
 
-				<!-- Banner -->
-				<section id="soommain">
-					<div class="content">
-						<header class="major">
-							<h3>회의 목록</h3>
-						</header>
-						<table class="table" style="background-color: white;">
-
-							<thead>
-								<tr
-									style="height: 5px; font-size: smaller; background-color: gray;">
-									<th>회의번호</th>
-									<th>제목</th>
-									<th>일자</th>
-									<th>참석자</th>
-
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1</td>
-									<td>쉼표 사람들 회의</td>
-									<td>2021-04-21</td>
-									<td>쉼표</td>
-								</tr>
-
-								<tr>
-									<td>1</td>
-									<td>쉼표 사람들 회의</td>
-									<td>2021-04-21</td>
-									<td>쉼표</td>
-								</tr>
-
-								<tr>
-									<td>1</td>
-									<td>쉼표 사람들 회의</td>
-									<td>2021-04-21</td>
-									<td>쉼표</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>쉼표 사람들 회의</td>
-									<td>2021-04-21</td>
-									<td>쉼표</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>쉼표 사람들 회의</td>
-									<td>2021-04-21</td>
-									<td>쉼표</td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>쉼표 사람들 회의</td>
-									<td>2021-04-21</td>
-									<td>쉼표</td>
-								</tr>
-
-								<tr>
-									<td>1</td>
-									<td>쉼표 사람들 회의</td>
-									<td>2021-04-21</td>
-									<td>쉼표</td>
-								</tr>
-							</tbody>
-
-						</table>
-				</section>
-
-				</section>
-
+			
 				<!-- Section -->
 				<section id="meetingjoin">
 					<header class="major">
@@ -125,81 +55,7 @@
 							<!-- <input type="text" height=300px></input> -->
 					</div>
 					
-					
-					
-				</section>
-
-				<!-- Section -->
-				<section id="storage">
-					<header class="major">
-						<h3> 회의록 보관함</h3>
-					</header>
-						<section id="search" class="alt">
-							<form method="post" action="#">
-								<input type="text" name="query" id="query" placeholder="Search" />
-							</form>
-						</section>
-					<div class="posts">
-						
-					</div>
-				</section>
-
-				<!-- Section -->
-				<section id="issue">
-					<header class="major">
-						<h2> 그룹별 이슈</h2>
-					</header>
-					<div class="posts">
-						<article>
-							<a href="#" class="image"><img src="images0426/pic01.jpg" alt="" /></a>
-							<h3>Interdum aenean</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images0426/pic02.jpg" alt="" /></a>
-							<h3>Nulla amet dolore</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images0426/pic03.jpg" alt="" /></a>
-							<h3>Tempus ullamcorper</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</article>
-						
-					</div>
-				</section>
-
-				<!-- Section -->
-				<section id="QnA">
-					<header class="major">
-						<h3>문의하기</h3>
-					</header>
-					<div class="textbox"> <label for="ex_input">제목</label> 
-					<input type="text" id="ex_input"> </div>
-					<br> <br>
-					<div class="textbox"> <label for="ex_input">문의 내용</label> 
-					<input type="text" id="ex_input" style="height : 400px"> </div>
-					<br>
-					<div style="text-align: center;">
-					<input type="submit" style="align-content: center">
-					</div>
-				</section>
-
+			
 			</div>
 		</div>
 
@@ -217,7 +73,7 @@
 				<!-- Menu -->
 				<nav id="menu">
 					<header class="major">
-						<a href="#soommain" id="title"> 메뉴</a>
+						<a href="soommain.jsp" id="title"> 메뉴</a>
 					</header>
 					<ul>
 						<li><a href="menu0426.jsp" id="top-link"><span
