@@ -3,20 +3,21 @@ package com.Service;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.DAO.memberDAO;
+import com.Inter.Command;
 import com.VO.memberVO;
 
 @WebServlet("/joinService")
-public class joinService extends HttpServlet {
+public class joinService implements Command {
 
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
+		request.setCharacterEncoding("utf-8");
 		
 		HttpSession session = request.getSession();
 		
@@ -32,6 +33,13 @@ public class joinService extends HttpServlet {
 			
 			response.sendRedirect("home.jsp");
 		}
+	}
+
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

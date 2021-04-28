@@ -25,18 +25,26 @@ public class memberDAO {
 	
 	public void getConn() {
 		try {
-			// 현재 memberDAO의 클래스파일을 기준으로 파일을 읽어오는 기능
-			InputStream in = getClass().getResourceAsStream("../../../../../../db.properties");
+//			// 현재 memberDAO의 클래스파일을 기준으로 파일을 읽어오는 기능
+//			InputStream in = getClass().getResourceAsStream("../../../../db.properties");
+//			
+//			// properties 파일 형식을 읽을 수 있는 객체
+//			Properties p = new Properties();
+//			// Properties 파일 형식으로 db.properties파일을 load함
+//			p.load(in);
+//			
+//			Class.forName(p.getProperty("dbClass"));
+//			String url = p.getProperty("dburl");
+//			String dbid = p.getProperty("dbid");
+//			String dbpw = p.getProperty("dbpw");
 			
-			// properties 파일 형식을 읽을 수 있는 객체
-			Properties p = new Properties();
-			// Properties 파일 형식으로 db.properties파일을 load함
-			p.load(in);
 			
-			Class.forName(p.getProperty("dbClass"));
-			String url = p.getProperty("dburl");
-			String dbid = p.getProperty("dbid");
-			String dbpw = p.getProperty("dbpw");
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			String url = "jdbc:oracle:thin:@121.147.52.234:1521:xe";
+			String dbid = "hr";
+			String dbpw = "hr";
+			
+			
 			
 			//DB에 관련된 정보를 properties파일로 관리하는 방법
 			conn = DriverManager.getConnection(url, dbid, dbpw);
@@ -77,7 +85,7 @@ public class memberDAO {
 			
 			getConn();
 			
-			String sql = "insert into message_member values(?, ?, ?, ?, ?, ?, ?, ?)";
+			String sql = "insert into MEMBER values(?, ?, ?, ?, ?, ?, ?, ?)";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, m_id);
 			psmt.setString(2, m_pw);
@@ -105,7 +113,7 @@ public class memberDAO {
 			getConn();
 			
 			
-			String sql = "update message_member set m_pw = ?, m_tel = ?, m_email = ? where m_id = ?";
+			String sql = "update MEMBER set m_pw = ?, m_tel = ?, m_email = ? where m_id = ?";
 			psmt = conn.prepareStatement(sql);
 			
 			psmt.setString(1, m_pw);
@@ -127,7 +135,7 @@ public class memberDAO {
 		try {
 			getConn();
 
-			String sql = "select * from message_member where m_id = ? and m_pw = ?";
+			String sql = "select * from MEMBER where M_ID = ? and M_PW = ?";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, m_id);
 			psmt.setString(2, m_pw);
@@ -153,7 +161,7 @@ public class memberDAO {
 		try {
 			getConn();
 
-		      String sql = "select * from message_member";
+		      String sql = "select * from MEMBER";
 		      psmt = conn.prepareStatement(sql);
 
 		      rs = psmt.executeQuery();
@@ -182,7 +190,7 @@ public int Delete(String num) {
 			
 			getConn();
 			
-			String sql = "delete from message_member where m_id = ?";
+			String sql = "delete from MEMBER where m_id = ?";
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, num);
 
@@ -200,7 +208,7 @@ public boolean idCheck(String m_id) {
 	try {
 		getConn();
 
-		String sql = "select * from message_member where m_id = ?";
+		String sql = "select * from MEMBER where m_id = ?";
 		psmt = conn.prepareStatement(sql);
 		psmt.setString(1, m_id);
 		
