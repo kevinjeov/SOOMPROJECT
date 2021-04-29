@@ -147,6 +147,8 @@ public class memberDAO {
 				String getM_email = rs.getString(7);
 				String getM_image = rs.getString(8);
 				vo = new memberVO(getM_id, getM_name, getM_email ,getM_image);
+				System.out.println("vo값 확인");
+				System.out.println(vo);
 			}
 			
 		}catch (Exception e){

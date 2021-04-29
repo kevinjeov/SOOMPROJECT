@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -8,7 +8,7 @@
 -->
 <html>
 <head>
-<title>¸·³»¿© ¼û½¬¾î¶ó SOOM~~</title>
+<title>ë§‰ë‚´ì—¬ ìˆ¨ì‰¬ì–´ë¼ SOOM~~</title>
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -31,10 +31,10 @@
 				<section>
 					<form action="LoginService">
 					<div align="center">
-					<input type="email" id="loginemail" value="" placeholder="ÀÌ¸ÞÀÏ"
+					<input type="email" id="loginemail" value="" placeholder="ì´ë©”ì¼"
 					style="width : 700px" ></input>
 					
-					<input type="password" id="password" value="" placeholder="ÀÌ¸ÞÀÏ"
+					<input type="password" id="password" value="" placeholder="ì´ë©”ì¼"
 					style="width : 700px" ></input>
 					</div>
 					</form>

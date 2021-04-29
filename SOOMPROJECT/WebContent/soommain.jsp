@@ -1,3 +1,4 @@
+<%@page import="com.VO.memberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
@@ -15,6 +16,10 @@
 <link rel="stylesheet" href="assets0426/css/main.css" />
 </head>
 <body class="is-preload">
+
+<%
+	memberVO vo = (memberVO)session.getAttribute("vo");
+	%>
 
    <!-- Wrapper -->
    <div id="wrapper">
@@ -38,6 +43,7 @@
                         class="label">Instagram</span></a></li>
                   <li><a href="#" class="icon brands fa-medium-m"><span
                         class="label">Medium</span></a></li>
+                  <li><span><%=vo.getM_name() %> 님 환영합니다.</span></li>
                </ul>
             </header>
 
