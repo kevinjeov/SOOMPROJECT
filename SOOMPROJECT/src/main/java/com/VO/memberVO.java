@@ -27,26 +27,13 @@ public class memberVO {
 	}
 	
 	public memberVO(String m_id, String m_pw) {
-		this.m_id = m_id;
-		this.m_pw = m_pw;
 	}
 
 	public memberVO(String m_id, String m_name, String m_email, String m_image) {
-		this.m_id = m_id;
-		this.m_name = m_name;
-		this.m_email = m_email;
-		this.m_image = m_image;
 	}
 
 	public memberVO(String m_id, String m_name, String m_age, String m_gender, String m_tel,
 			String m_email, String m_image) {
-		this.m_id = m_id;
-		this.m_name = m_name;
-		this.m_age = m_age;
-		this.m_gender = m_gender;
-		this.m_tel = m_tel;
-		this.m_email = m_email;
-		this.m_image = m_image;
 	}
 
 	// 3. getters, setters (generate Getters and Setters)

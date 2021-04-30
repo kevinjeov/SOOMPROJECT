@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -79,7 +79,7 @@ img {
 	background-color: pink;
 }
 </style>
-<title>¸·³»¿© ¼û½¬¾î¶ó SOOM</title>
+<title>ë§‰ë‚´ì—¬ ìˆ¨ì‰¬ì–´ë¼ SOOM</title>
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -99,7 +99,7 @@ img {
 
 				<!-- Form -->
 				<div style="margin-top: 30px;">
-				<h2>È¸¿ø°¡ÀÔ</h2>
+				<h2>íšŒì›ê°€ì…</h2>
 				</div>
 				<br>
 				<div class="row" >
@@ -140,27 +140,27 @@ img {
 					</div>
 				</div>
 				<form method="post" action="JoinService">
-					<!-- //DAOÆÄÀÏ¿¡ ¾ÆÀÌµğÈ®ÀÎ ÇÏ´Â Á¶ÀÎ ¼­ºñ½º ¸¸µé¸é µÉ°Å°°¾Æ¿ä -->
+					<!-- //DAOíŒŒì¼ì— ì•„ì´ë””í™•ì¸ í•˜ëŠ” ì¡°ì¸ ì„œë¹„ìŠ¤ ë§Œë“¤ë©´ ë ê±°ê°™ì•„ìš” -->
 					<div style="margin-left: 5px">
-						<input type="text" name="name" id="name" value=""
-							placeholder="ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä" style="width: 40%; margin-left: 150px;" /><br>
+						<input type="text" name="m_name" id="m_name" value=""
+							placeholder="ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”" style="width: 40%; margin-left: 150px;" /><br>
 							
 						<div style="display: block;">
 						
 						
-							<input type="email" name="useremail" id="useremail" value=""
-								placeholder="ÀÌ¸ŞÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä" style="width: 40%; margin-left: 150px;" /><br>
+							<input type="email" name="m_email" id="useremail" value=""
+								placeholder="ì´ë©”ì¼ì„ ì…ë ¥í•˜ì„¸ìš”" style="width: 40%; margin-left: 150px;" /><br>
 								
-								<input class="file-upload" type="file" accept="image/*"
+								<input class="file-upload" type="file" accept="image/*" name = m_image value = ""
 									onchange="setThumbnail(event);" style="position: absolute; bottom: 470px;">
 									<br><br>
 									<!-- <div style="height: 500px;"></div> -->
 
-							<!--					<th>ÀÌ¸ŞÀÏ</th>
+							<!--					<th>ì´ë©”ì¼</th>
         
-            <input type='text' name="email" placeholder="ÀÌ¸ŞÀÏÀ» ÀÔ·ÂÇÏ¼¼¿ä"style="width: 40%; margin-left: 150px;">@
+            <input type='text' name="email" placeholder="ì´ë©”ì¼ì„ ì…ë ¥í•˜ì„¸ìš”"style="width: 40%; margin-left: 150px;">@
               <select name="emailaddr" style="width: 40%; margin-left: 150px;">
-                 <option value="">Á÷Á¢ÀÔ·Â</option>
+                 <option value="">ì§ì ‘ì…ë ¥</option>
                  <option value="daum.net">daum.net</option>
                  <option value="empal.com">empal.com</option>
                  <option value="gmail.com">gmail.com</option>
@@ -173,11 +173,11 @@ img {
 					</div>
 					
 
-					<!-- ¾ÆÀÌµğ -->
+					<!-- ì•„ì´ë”” -->
 					<div>
-						<input type="text" id="id" required="required" name="id"
-							placeholder="¾ÆÀÌµğ¸¦ ÀÔ·ÂÇÏ¼¼¿ä" style="display: inline; width: 53%; margin-top: 10px">
-						<input type="button" value="Áßº¹È®ÀÎ" onclick="ajaxCall()"
+						<input type="text" id="id" required="required" name="m_id"
+							placeholder="ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”" style="display: inline; width: 53%; margin-top: 10px">
+						<input type="button" value="ì¤‘ë³µí™•ì¸" onclick="ajaxCall()"
 							style="margin-left: 3%;">
 						<p id="p1"></p>
 
@@ -186,28 +186,28 @@ img {
 
 					<div>
 
-						<input type="password" name="pw" id="pw" minlength="6"
-							maxlength="12" placeholder="ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä" onchange="check_pw()"
+						<input type="password" name="m_pw" id="pw" minlength="6"
+							maxlength="12" placeholder="ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”" onchange="check_pw()"
 							style="display: inline; width: 53%;">&nbsp; <span
-							style="color: #5f8ea0; margin-left: 1%;">º¸¾È¼º </span>
+							style="color: #5f8ea0; margin-left: 1%;">ë³´ì•ˆì„± </span>
 						<progress id="pw_pro" value="0" max="3" style="margin-left: 1%;"></progress>
 						&nbsp;<span id="pw_pro_label"></span> <br> <br> <input
-							type="password" name="pw2" id="pw2" placeholder="ºñ¹Ğ¹øÈ£ È®ÀÎ"
+							type="password" name="pw2" id="pw2" placeholder="ë¹„ë°€ë²ˆí˜¸ í™•ì¸"
 							onchange="check_pw()" style="width: 53%; display: inline;"><br>
-						<span id="check"></span> <br> <input type="text" name="tel"
+						<span id="check"></span> <br> <input type="text" name="m_tel"
 							required="required" pattern="[0-1]{3}-[0-9]{4}-[0-9]{4}"
-							title="###-####-#### Çü½ÄÀ» ÁöÄÑÁÖ¼¼¿ä" placeholder="ÀüÈ­¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä"
+							title="###-####-#### í˜•ì‹ì„ ì§€ì¼œì£¼ì„¸ìš”" placeholder="ì „í™”ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”"
 							style="width: 53%;"> <br> <br>
 
 
 
-						<h3>¼ºº°</h3>
-						<input type="radio" id="gender-male" name="gender" checked>
-						<label for="gender-male" style="margin-bottom: 3%;">³²ÀÚ</label> <input
-							type="radio" id="gender-female" name="gender-male"> <label
-							for="gender-female">¿©ÀÚ</label> <br> <br>
-						<h3>»ı³â¿ùÀÏ</h3>
-						<td><input type="date" id="birth" name="birth"
+						<h3>ì„±ë³„</h3>
+						<input type="radio" id="gender-male" name="gender" value = "ë‚¨ì"checked>
+						<label for="gender-male" style="margin-bottom: 3%;">ë‚¨ì</label> <input
+							type="radio" id="gender-female" name="gender" value="ì—¬ì"> <label
+							for="gender-female">ì—¬ì</label> <br> <br>
+						<h3>ìƒë…„ì›”ì¼</h3>
+						<td><input type="date" id="birth" name="m_age"
 							style="margin-bottom: 3%;"></td>
 					</div>
 
@@ -216,7 +216,7 @@ img {
 					<div>
 						<ul class="actions">
 
-							<li><input type="submit" onclick="test()" value="°¡ÀÔÇÏ±â"
+							<li><input type="submit" onclick="test()" value="ê°€ì…í•˜ê¸°"
 								class="primary"
 								style="position: relative; margin-top: 30%; margin-left: 150%;" /></li>
 
@@ -229,7 +229,7 @@ img {
 							const nameElem = document.querySelector('#name');
 							var userName = nameElem.value;
 							window.alert('\uD83D\uDE00' + userName
-									+ '´Ô È¸¿ø°¡ÀÔ ¼º°ø');
+									+ 'ë‹˜ íšŒì›ê°€ì… ì„±ê³µ');
 
 						}
 					</script>

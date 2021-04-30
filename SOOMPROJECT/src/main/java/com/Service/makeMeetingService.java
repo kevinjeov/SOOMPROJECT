@@ -14,7 +14,7 @@ import com.VO.conferenceVO;
 import com.VO.memberVO;
 import com.VO.textVO;
 
-@WebServlet("/makeMeetingService")
+
 public class makeMeetingService implements Command {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)

@@ -113,13 +113,14 @@ public class memberDAO {
 			getConn();
 			
 			
-			String sql = "update MEMBER set m_pw = ?, m_tel = ?, m_email = ? where m_id = ?";
+			String sql = "update MEMBER set m_pw = ?, m_tel = ?, m_email = ?, m_image = ? where m_id = ?";
 			psmt = conn.prepareStatement(sql);
 			
 			psmt.setString(1, m_pw);
 			psmt.setString(2, m_tel);
 			psmt.setString(3, m_email);
-			psmt.setString(4, vo.getM_id());
+			psmt.setString(4, m_image);
+			psmt.setString(5, vo.getM_id());
 			
 			cnt = psmt.executeUpdate();
 			

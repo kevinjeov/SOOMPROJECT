@@ -11,9 +11,6 @@ import javax.servlet.http.HttpSession;
 import com.Inter.Command;
 import com.VO.memberVO;
 
-
-@WebServlet("/logoutService")
-
 public class logoutService implements Command {
 	public String execute(HttpServletRequest request,HttpServletResponse response) 
 			throws ServletException, IOException{

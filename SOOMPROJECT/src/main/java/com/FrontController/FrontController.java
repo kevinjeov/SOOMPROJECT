@@ -58,9 +58,9 @@ public class FrontController extends HttpServlet {
 			service = new deleteService();
 		}else if (res_uri.equals("logoutService.do")) {
 			service = new logoutService();
-		}else if (res_uri.equals("makeMeetingService.do")) {
-			service = new makeMeetingService();
-		}
+		}//else if (res_uri.equals("makeMeetingService.do")) {
+		//	service = new makeMeetingService();
+		//}
 		String nextPage = service.execute(request, response);
 		
 		RequestDispatcher dis = request.getRequestDispatcher(nextPage);
