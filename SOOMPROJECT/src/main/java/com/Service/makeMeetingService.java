@@ -24,15 +24,16 @@ public class makeMeetingService implements Command {
 
 		HttpSession session = request.getSession();
 		
-		memberVO vo = (memberVO) session.getAttribute("member");
+		memberVO vom = (memberVO) session.getAttribute("member");
 
-		textVO vo2 = (textVO) session.getAttribute("makemeeting");
+		textVO vot = (textVO) session.getAttribute("text");
 		
-		conferenceVO vo3 = (conferenceVO) session.getAttribute("makemeeting");
+		conferenceVO voc = (conferenceVO) session.getAttribute("conference");
 
 		textDAO dao = new textDAO();
 
-		int cnt = dao.MakeMeeting(vo2.getT_code(), vo.getM_id(), vo3.getC_code(), vo2.getT_time(), vo2.getT_comment());
+		int cnt = dao.MakeMeeting(vot.getT_code(), vom.getM_id(), voc.getC_code(), 
+				vot.getT_time(), vot.getT_comment());
 
 		if (cnt > 0) {
 

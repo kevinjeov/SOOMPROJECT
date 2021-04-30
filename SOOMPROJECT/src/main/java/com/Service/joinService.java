@@ -49,7 +49,7 @@ public class joinService implements Command {
 			memberVO vo = new memberVO(m_id, m_name, m_age, m_gender, m_tel,
 					m_email, m_image);
 			session.setAttribute("join_vo", vo);
-			System.out.println(vo);
+			System.out.println(vo.getM_name()+"님 환영합니다.");
 			
 		}
 		return "login.jsp";

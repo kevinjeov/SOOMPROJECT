@@ -18,7 +18,7 @@ public class memberDAO {
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	int cnt;
-	memberVO vo = null;
+	memberVO vom = null;
 	
 	public void getConn() {
 		try {
@@ -104,7 +104,7 @@ public class memberDAO {
 	}
 	public int Update(String m_id, String m_pw, String m_tel, String m_email, String m_image) {
 		
-			vo = new memberVO(m_id, m_tel, m_email, m_image);
+			vom = new memberVO(m_id, m_tel, m_email, m_image);
 			
 		try {
 			getConn();
@@ -117,7 +117,7 @@ public class memberDAO {
 			psmt.setString(2, m_tel);
 			psmt.setString(3, m_email);
 			psmt.setString(4, m_image);
-			psmt.setString(5, vo.getM_id());
+			psmt.setString(5, vom.getM_id());
 			
 			cnt = psmt.executeUpdate();
 			
@@ -144,16 +144,16 @@ public class memberDAO {
 				String getM_name = rs.getString(3);
 				String getM_email = rs.getString(7);
 				String getM_image = rs.getString(8);
-				vo = new memberVO(getM_id, getM_name, getM_email ,getM_image);
+				vom = new memberVO(getM_id, getM_name, getM_email ,getM_image);
 				System.out.println("vo값 확인");
-				System.out.println(vo);
+				System.out.println(vom);
 			}
 			
 		}catch (Exception e){
 			e.printStackTrace();
 		}finally {
 			Close();
-		}return vo;
+		}return vom;
 	} 
 	public ArrayList<memberVO> Select() {
 		
@@ -174,8 +174,8 @@ public class memberDAO {
 				String getM_tel = rs.getString(6);
 				String getM_email = rs.getString(7);
 				String getM_image = rs.getString(8);
-                  vo = new memberVO(getM_id,getM_name,getM_age,getM_gender,getM_tel,getM_email,getM_image);
-                  arr.add(vo);
+                  vom = new memberVO(getM_id,getM_name,getM_age,getM_gender,getM_tel,getM_email,getM_image);
+                  arr.add(vom);
 		      }
 			
 		}catch(Exception e) {

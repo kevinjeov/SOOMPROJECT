@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.VO.conferenceVO;
 import com.VO.textVO;
 
 public class textDAO {
@@ -19,7 +20,7 @@ public class textDAO {
 		PreparedStatement psmt = null;
 		ResultSet rs = null;
 		int cnt;
-		textVO vo = null;
+		conferenceVO voc = null;
 	
 	public void getConn() {
 		try {
@@ -76,7 +77,7 @@ public class textDAO {
 	}
 	// 회의록 생성 클릭 이벤트로 발생하는 DAO 기능
 	public int MakeMeeting(int t_code, String t_id, int t_room, String t_time, String t_comment) {
-		
+			
 		
 		try {
 			
@@ -85,11 +86,9 @@ public class textDAO {
 			String sql = "insert into TEXT values(TEXT_SEQ.nextval, ?, ?, "
 					+ "to_char(sysdate,'yyyy.mm.dd hh24:mi'), ?)";
 			psmt = conn.prepareStatement(sql);
-			psmt.setInt(1, t_code);
-			psmt.setString(2, t_id);
-			psmt.setInt(3, t_room);
-			psmt.setString(4, t_time);
-			psmt.setString(5, t_comment);
+			psmt.setString(1, t_id);
+			psmt.setInt(2, voc.getC_code());
+			psmt.setString(3, t_comment);
 			
 			
 			
