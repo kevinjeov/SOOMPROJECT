@@ -16,6 +16,7 @@ import com.Service.deleteService;
 import com.Service.joinService;
 import com.Service.loginService;
 import com.Service.logoutService;
+import com.Service.makeMeetingService;
 import com.VO.memberVO;
 
 /**
@@ -57,6 +58,8 @@ public class FrontController extends HttpServlet {
 			service = new deleteService();
 		}else if (res_uri.equals("logoutService.do")) {
 			service = new logoutService();
+		}else if (res_uri.equals("makeMeetingService.do")) {
+			service = new makeMeetingService();
 		}
 		String nextPage = service.execute(request, response);
 		

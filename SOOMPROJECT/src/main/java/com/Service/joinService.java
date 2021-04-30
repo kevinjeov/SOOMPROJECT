@@ -11,7 +11,7 @@ import com.DAO.memberDAO;
 import com.Inter.Command;
 import com.VO.memberVO;
 
-@WebServlet("/joinService")
+
 public class joinService implements Command {
 
 
@@ -35,11 +35,5 @@ public class joinService implements Command {
 		}
 	}
 
-	@Override
-	public String execute(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 }
