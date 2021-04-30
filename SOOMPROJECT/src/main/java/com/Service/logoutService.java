@@ -20,7 +20,7 @@ public class logoutService implements Command {
 		
 
 		HttpSession session = request.getSession();
-		memberVO vo = (memberVO) session.getAttribute("vo");
+		memberVO vo = (memberVO) session.getAttribute("vom");
 
 		session.removeAttribute("vo");
 

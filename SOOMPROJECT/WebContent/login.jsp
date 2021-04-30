@@ -33,7 +33,7 @@
 </head>
 <body class="is-preload">
 	<%
-	memberVO vo = (memberVO)session.getAttribute("vo");
+	memberVO vom = (memberVO)session.getAttribute("vom");
 	%>
 
 	<h3 style="text-align: center; margin-top: 50px;">S O O M</h3>

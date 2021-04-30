@@ -34,8 +34,9 @@ public class loginService implements Command {
 		if (vo != null) {// True
 			HttpSession session = request.getSession();
 			
-			session.setAttribute("member", vo);
-			System.out.println(vo);
+			session.setAttribute("vom", vo);
+			System.out.println(vo.getM_name());
+			
 			
 		}
 		return "soommain.jsp";
