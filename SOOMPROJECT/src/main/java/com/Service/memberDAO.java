@@ -1,11 +1,14 @@
 package com.DAO;
 
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Properties;
+
 import com.VO.memberVO;
 
 public class memberDAO {

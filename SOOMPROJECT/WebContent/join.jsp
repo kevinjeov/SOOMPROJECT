@@ -139,7 +139,7 @@ img {
 						</div>
 					</div>
 				</div>
-				<form method="post" action="JoinService">
+				<form method="post" action="joinService.do">
 					<!-- //DAO파일에 아이디확인 하는 조인 서비스 만들면 될거같아요 -->
 					<div style="margin-left: 5px">
 						<input type="text" name="m_name" id="m_name" value=""

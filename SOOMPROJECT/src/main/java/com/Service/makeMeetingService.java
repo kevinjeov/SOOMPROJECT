@@ -17,7 +17,7 @@ import com.VO.textVO;
 
 public class makeMeetingService implements Command {
 
-	protected void service(HttpServletRequest request, HttpServletResponse response)
+	public String execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
 		request.setCharacterEncoding("utf-8");
@@ -38,5 +38,7 @@ public class makeMeetingService implements Command {
 
 			response.sendRedirect("home.jsp");
 		}
+		return null;
 	}
+
 }
