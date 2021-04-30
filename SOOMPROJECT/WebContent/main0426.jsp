@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -90,7 +90,7 @@ ul > li > a .screen .bottom{
 }  */
 </style>
 
-<title>������ ������� SOOM</title>
+<title>막내여 숨쉬어라 SOOM</title>
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -104,7 +104,7 @@ ul > li > a .screen .bottom{
 		<div id="main">
 
 			<button style="float: right; margin-top: 60px; margin-right: 100px;"
-				onclick="location.href='login.jsp'">�α���</button>
+				onclick="location.href='login.jsp'">로그인</button>
 
 
 
@@ -117,13 +117,13 @@ ul > li > a .screen .bottom{
 			<!-- Section -->
 			<section>
 				<br> <br>
-				<h3 style="text-align: center;">���� �ִ� �ð� ��ǥ,</h3>
+				<h3 style="text-align: center;">쉼을 주는 시간 쉼표,</h3>
 				<img src="images0426/SOOM.PNG" height="150" width="400"
 					style="display: block; margin: 0px auto;"></img> <br> <br>
 				<br>
 			</section>
 
-			<!-- �ΰ� ���� -->
+			<!-- 로고 다음 -->
 			<section>
 				<br> <br> <br>
 				<hr style="border: solid 1px gray;">
@@ -132,9 +132,9 @@ ul > li > a .screen .bottom{
 					<ul>
 						<li><a href="">
 								<div class="screen">
-									<div class="top">��Ȯ��</div>
-									<div class="bottom">ȸ�� �� ��ũ��Ʈ�� �ǽð����� ��ũ���꿡 �ؽ�Ʈ�� ��������ν�
-										ȸ���� ��Ȯ���� �ŷڼ��� �ö󰡴� ȿ���� ���� �� �ִ�.</div>
+									<div class="top">정확성</div>
+									<div class="bottom">회의 중 스크립트로 실시간으로 스크리브에 텍스트를 띄우줌으로써
+										회의의 정확성과 신뢰성이 올라가는 효과를 얻을 수 있다.</div>
 									<img src="images0426/accuracy.PNG">
 								</div>
 
@@ -143,9 +143,9 @@ ul > li > a .screen .bottom{
 
 						<li><a href="">
 								<div class="screen">
-									<div class="top">�ð� ���༺</div>
-									<div class="bottom">ȸ�� �� ��ũ��Ʈ�� �ǽð����� ��ũ���꿡 �ؽ�Ʈ�� ��������ν�
-										ȸ���� ��Ȯ���� �ŷڼ��� �ö󰡴� ȿ���� ���� �� �ִ�.</div>
+									<div class="top">시간 절약성</div>
+									<div class="bottom">회의 중 스크립트로 실시간으로 스크리브에 텍스트를 띄우줌으로써
+										회의의 정확성과 신뢰성이 올라가는 효과를 얻을 수 있다.</div>
 									<img src="images0426/fast.PNG">
 								</div>
 
@@ -154,9 +154,9 @@ ul > li > a .screen .bottom{
 
 						<li><a href="">
 								<div class="screen">
-									<div class="top">������</div>
-									<div class="bottom">ȸ�� �� ��ũ��Ʈ�� �ǽð����� ��ũ���꿡 �ؽ�Ʈ�� ��������ν�
-										ȸ���� ��Ȯ���� �ŷڼ��� �ö󰡴� ȿ���� ���� �� �ִ�.</div>
+									<div class="top">편리성</div>
+									<div class="bottom">회의 중 스크립트로 실시간으로 스크리브에 텍스트를 띄우줌으로써
+										회의의 정확성과 신뢰성이 올라가는 효과를 얻을 수 있다.</div>
 									<img src="images0426/comfort.PNG">
 								</div>
 
