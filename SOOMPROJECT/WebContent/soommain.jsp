@@ -91,18 +91,6 @@
 								}
 								%>
 
-								<%
-								
-
-								if (vom != null) {
-								%>
-								<tr>
-									<td align="right" colspan="5"><button class="btn_wr"
-											type="button" onclick="location.href='tip_write.jsp'">글쓰기</button></td>
-								</tr>
-								<%
-								}
-								%>
 
 							</thead>
 
