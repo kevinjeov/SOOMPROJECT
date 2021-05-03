@@ -38,6 +38,7 @@ button:hover {
 <body>
    <%
       memberVO vom = (memberVO) session.getAttribute("vom");
+      String name = (String) session.getAttribute("name");
    %>
 
 

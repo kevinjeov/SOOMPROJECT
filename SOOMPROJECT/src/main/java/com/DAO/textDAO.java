@@ -142,7 +142,7 @@ public class textDAO {
 		return cnt;
 
 	}
-public ArrayList<textVO> Select() {
+public ArrayList<textVO> MeetingList() {
 		
 		ArrayList<textVO> arr = new ArrayList<textVO>();
 		try {
@@ -154,17 +154,11 @@ public ArrayList<textVO> Select() {
 		      rs = psmt.executeQuery();
 		      
 		      while(rs.next()) {
-		    	String getT_all = rs.getString(3);
-				String getT_summary = rs.getString(4);
-				String getT_plan = rs.getString(5);
-				String getT_decision = rs.getString(6);
-				String getT_remark = rs.getString(7);
 				String getT_guest = rs.getString(8);
 				String getT_time = rs.getString(9);
 				String getT_id = rs.getString(10);
 				String getT_title = rs.getString(11);
-                  vot = new textVO(getT_all, getT_summary, getT_plan, getT_decision, getT_remark,
-                		  getT_guest, getT_time, getT_id, getT_title);
+                  vot = new textVO(getT_guest, getT_time, getT_id, getT_title);
                   arr.add(vot);
 		      }
 			
@@ -174,5 +168,38 @@ public ArrayList<textVO> Select() {
 			Close();
 		}return arr;
 	}
+
+public ArrayList<textVO> SelectAllMeeting() {
+	
+	ArrayList<textVO> arr = new ArrayList<textVO>();
+	try {
+		getConn();
+
+	      String sql = "select * from TEXT";
+	      psmt = conn.prepareStatement(sql);
+
+	      rs = psmt.executeQuery();
+	      
+	      while(rs.next()) {
+	    	String getT_all = rs.getString(3);
+			String getT_summary = rs.getString(4);
+			String getT_plan = rs.getString(5);
+			String getT_decision = rs.getString(6);
+			String getT_remark = rs.getString(7);
+			String getT_guest = rs.getString(8);
+			String getT_time = rs.getString(9);
+			String getT_id = rs.getString(10);
+			String getT_title = rs.getString(11);
+              vot = new textVO(getT_all, getT_summary, getT_plan, getT_decision, getT_remark,
+            		  getT_guest, getT_time, getT_id, getT_title);
+              arr.add(vot);
+	      }
+		
+	}catch(Exception e) {
+		e.printStackTrace();
+	}finally {
+		Close();
+	}return arr;
+}
 
 }

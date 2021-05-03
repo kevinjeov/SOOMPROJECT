@@ -27,6 +27,8 @@ public class memberVO {
 	}
 	
 	public memberVO(String m_id, String m_pw) {
+		this.m_id = m_id;
+		this.m_pw = m_pw;
 	}
 
 	public memberVO(String m_id, String m_name, String m_email, String m_image) {

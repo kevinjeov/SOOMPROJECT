@@ -32,6 +32,16 @@ public class textVO {
 	
 	
 
+	public textVO(String t_guest, String t_time, String t_id, String t_title) {
+		super();
+		this.t_guest = t_guest;
+		this.t_time = t_time;
+		this.t_id = t_id;
+		this.t_title = t_title;
+	}
+
+
+
 	public textVO(String t_all, String t_summary, String t_plan, String t_decision, String t_remark, String t_guest,
 			String t_time, String t_id, String t_title) {
 		super();

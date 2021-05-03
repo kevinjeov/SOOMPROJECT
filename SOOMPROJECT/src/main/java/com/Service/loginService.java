@@ -18,28 +18,38 @@ public class loginService implements Command {
 	public String execute(HttpServletRequest request,HttpServletResponse response) 
 			throws ServletException, IOException{
 		
-		request.setCharacterEncoding("utf-8");
-		System.out.println("로그인기능을 수행하겠습니다.");
+		try {
+			request.setCharacterEncoding("utf-8");
+			System.out.println("로그인기능을 수행하겠습니다.");
 
-		String m_id = request.getParameter("m_id");
-		String m_pw = request.getParameter("m_pw");
-		
-		System.out.println(m_id);
-		System.out.println(m_pw);
-
-		memberDAO dao = new memberDAO();
-		memberVO vom = dao.Login(m_id, m_pw);
-
-		System.out.println(vom.getM_name());
-		if (vom != null) {// True
-			HttpSession session = request.getSession();
+			String m_id = request.getParameter("m_id");
+			String m_pw = request.getParameter("m_pw");
 			
-			session.setAttribute("vom", vom);
+			System.out.println(m_id);
+			System.out.println(m_pw);
+
+			memberDAO dao = new memberDAO();
+			memberVO vom = dao.Login(m_id, m_pw);
+
 			System.out.println(vom.getM_name());
 			
+			if (vom != null) {// True
+				HttpSession session = request.getSession();
+				
+				session.setAttribute("vom", vom);
+				System.out.println(vom.getM_name());
+				
+				session.setAttribute("name", vom.getM_name());
+			}
 			
-		}
-		return "soommain.jsp";
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally {
+			
+		}return "soommain.jsp";
+		
+		
+		
 		
 		
 		
