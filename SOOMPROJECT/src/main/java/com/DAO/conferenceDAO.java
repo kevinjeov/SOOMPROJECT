@@ -33,7 +33,7 @@ public class conferenceDAO {
 //			String dbpw = p.getProperty("dbpw");
 
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			String url = "jdbc:oracle:thin:@121.147.52.234:1521:xe";
+			String url = "jdbc:oracle:thin:@172.30.1.15:1521:xe";
 			String dbid = "hr";
 			String dbpw = "hr";
 
