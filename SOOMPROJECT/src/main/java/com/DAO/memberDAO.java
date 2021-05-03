@@ -134,6 +134,7 @@ public class memberDAO {
 			getConn();
 
 			String sql = "select * from MEMBER where M_ID = ? and M_PW = ?";
+			
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, m_id);
 			psmt.setString(2, m_pw);
@@ -144,9 +145,9 @@ public class memberDAO {
 				String getM_name = rs.getString(3);
 				String getM_email = rs.getString(7);
 				String getM_image = rs.getString(8);
+				
 				vom = new memberVO(getM_id, getM_name, getM_email ,getM_image);
-				System.out.println("vo값 확인");
-				System.out.println(vom);
+				
 			}
 			
 		}catch (Exception e){

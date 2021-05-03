@@ -31,9 +31,13 @@ public class makeMeetingService implements Command {
 		conferenceVO voc = (conferenceVO) session.getAttribute("conference");
 
 		textDAO dao = new textDAO();
-
-		int cnt = dao.MakeMeeting(vot.getT_code(), vom.getM_id(), voc.getC_code(), 
-				vot.getT_time(), vot.getT_comment());
+		dao.vom = vom;
+		dao.voc = voc;
+		
+		int cnt = dao.MakeMeeting(vot.getT_code(), voc.getC_code(), vot.getT_all(), vot.getT_summary(), vot.getT_plan(),
+				vot.getT_decision(),vot.getT_remark(), voc.getC_guest(), vot.getT_time(), vom.getM_id(), voc.getC_title());
+		
+		
 
 		if (cnt > 0) {
 

@@ -28,14 +28,14 @@ public class loginService implements Command {
 		System.out.println(m_pw);
 
 		memberDAO dao = new memberDAO();
-		memberVO vo = dao.Login(m_id, m_pw);
+		memberVO vom = dao.Login(m_id, m_pw);
 
-		System.out.println(vo);
-		if (vo != null) {// True
+		System.out.println(vom.getM_name());
+		if (vom != null) {// True
 			HttpSession session = request.getSession();
 			
-			session.setAttribute("vom", vo);
-			System.out.println(vo.getM_name());
+			session.setAttribute("vom", vom);
+			System.out.println(vom.getM_name());
 			
 			
 		}

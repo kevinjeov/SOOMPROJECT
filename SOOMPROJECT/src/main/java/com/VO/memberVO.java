@@ -30,6 +30,10 @@ public class memberVO {
 	}
 
 	public memberVO(String m_id, String m_name, String m_email, String m_image) {
+		this.m_id = m_id;
+		this.m_name = m_name;
+		this.m_email = m_email;
+		this.m_image = m_image;
 	}
 
 	public memberVO(String m_id, String m_name, String m_age, String m_gender, String m_tel,

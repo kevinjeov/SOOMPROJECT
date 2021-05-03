@@ -15,7 +15,7 @@ public class conferenceDAO {
 	PreparedStatement psmt = null;
 	ResultSet rs = null;
 	int cnt;
-	conferenceVO vo = null;
+	conferenceVO voc = null;
 
 	public void getConn() {
 		try {
@@ -95,7 +95,7 @@ public class conferenceDAO {
 
 	public int Update(String c_title, String c_guest) {
 
-		vo = new conferenceVO(c_title, c_guest);
+		voc = new conferenceVO(c_title, c_guest);
 
 		try {
 			getConn();
@@ -159,9 +159,9 @@ public class conferenceDAO {
 
 				System.out.println(getC_code + "," + getC_title + "," + getC_date + "," + getC_guest);
 
-				vo = new conferenceVO(getC_code, getC_title, getC_date, getC_guest);
-				arr.add(vo);
-				System.out.println(vo);
+				voc = new conferenceVO(getC_code, getC_title, getC_date, getC_guest);
+				arr.add(voc);
+				System.out.println(voc);
 			}
 
 		} catch (Exception e) {
