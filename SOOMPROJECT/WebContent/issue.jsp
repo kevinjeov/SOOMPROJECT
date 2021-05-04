@@ -17,6 +17,7 @@
 </head>
 <body class="is-preload">
    <%
+   	  // branch-dk에서 덕연씨 자리에서 주석 수정
       memberVO vom = (memberVO) session.getAttribute("vom");
    %>
 
